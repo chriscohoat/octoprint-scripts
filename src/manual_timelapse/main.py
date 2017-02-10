@@ -3,6 +3,7 @@ import os
 import datetime
 import time
 
+
 def start_taking_snapshots(output_directory):
     if os.path.exists(output_directory):
         raise Exception("Output directory already exists.")
@@ -25,8 +26,6 @@ def start_taking_snapshots(output_directory):
 
         image_number += 1
         time.sleep(2)
-
-
 
 
 def main():
